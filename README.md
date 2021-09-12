@@ -19,21 +19,33 @@ Due to more requests for combat data to be shared inside the API, the documentat
 
 ### GET /session
 
-In both [Combat](/Combat/session.md) and [Arena](/Combat/session.md).
+[Combat](/Combat/session.md) | [Arena](/Combat/session.md).
 
 This returns a detailed representation of the current state of the match. The response is a JSON string, which can be parsed with any standard JSON parser.
 
-### POST [/write_camera_mode](/Arena/write_camera_mode.md)
+### POST /write_camera
 
-Only in Arena
+[Combat](/Combat/write_camera.md) | [Arena](/Combat/write_camera.md).
 
-### POST [/set_ui_visibility](/Arena/set_ui_visibility.md)
+Allows you to position the camera to an exact position, rotation and FOV of the spectator camera.
 
-Only in Arena
+### POST /write_camera_mode
 
-### POST [/set_enemy_team_muted](/Arena/set_enemy_team_muted.md)
+[Combat](/Combat/write_camera_mode.md) | [Arena](/Combat/write_camera_mode.md).
 
-Only in Arena
+Allows you to set variables about the spectator camera.
+
+### POST /set_ui_visibility
+
+[Combat](/Combat/set_ui_visibility.md) | [Arena](/Combat/set_ui_visibility.md).
+
+Toggle the UI visibility of the user.
+
+### POST /set_enemy_team_muted
+
+[Combat](/Combat/set_enemy_team_muted.md) | [Arena](/Combat/set_enemy_team_muted.md).
+
+Toggle whether the enemy team is muted.
 
 ## Responses
 
