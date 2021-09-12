@@ -5,7 +5,7 @@ Unofficial documentation for Echo VR's Arena HTTP API.
 ## Summary
 
 Echo Arena has an HTTP API available for querying current game state. This API
-listens locally on port 6721 (`http://127.0.0.1:6721/session`). This API now requires a setting to be toggled on.
+listens locally on port 6721 (`http://127.0.0.1:6721`). This API now requires a setting to be toggled on.
 
 Note that if any other service is alredy bound to this (TCP) port, which often
 happens on Windows, Echo will not be able to bind to it. To kill any services
@@ -19,13 +19,17 @@ This repository aims to document all the functionality of this API.
 
 This returns a detailed representation of the current state of the match. The response is a JSON string, which can be parsed with any standard JSON parser.
 
+### POST [/write_camera](/Arena/write_camera.md)
+
+Write the camera position, rotation and FOV for the current spectator.
+
 ### POST [/write_camera_mode](/Arena/write_camera_mode.md)
 
 Write the camera mode that the current spectator is in, along with the player to focus on.
 
 ### POST [/set_ui_visibility](/Arena/set_ui_visibility.md)
 
-Toggle the spectator UI.
+Toggle the player HUD.
 
 ### POST [/set_enemy_team_muted](/Arena/set_enemy_team_muted.md)
 
@@ -38,6 +42,10 @@ Concepts used in multiple places that only apply to Arena.
 ### Possession
 
 The API defines "possession" a little more broadly than you might expect (depending on what other sports you may be familiar with that use this term). Not only do players/teams that are currently holding the disk have possession, but teams also maintain possession for 7 seconds after releasing the disk as well, unless the disk is recovered by the opposing team. If the disk is glowing with the color of a specific team, the game considers that team as having "possession".
+
+### Arena Map Positions
+
+The following is data taken about where things are in the Arena map. For the write camera endpoint this is what you need to position the camera inside or around, and for players this is the limits of where they can go.
 
 ## Community Parts
 
