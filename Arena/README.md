@@ -15,19 +15,19 @@ This repository aims to document all the functionality of this API.
 
 ## API Endpoints
 
-### GET [/session](/session.md)
+### GET [/session](/Arena/session.md)
 
 This returns a detailed representation of the current state of the match. The response is a JSON string, which can be parsed with any standard JSON parser.
 
-### POST [/write_camera_mode](/write_camera_mode.md)
+### POST [/write_camera_mode](/Arena/write_camera_mode.md)
 
 Write the camera mode that the current spectator is in, along with the player to focus on.
 
-### POST [/set_ui_visibility](/set_ui_visibility.md)
+### POST [/set_ui_visibility](/Arena/set_ui_visibility.md)
 
 Toggle the spectator UI.
 
-### POST [/set_enemy_team_muted](/set_enemy_team_muted.md)
+### POST [/set_enemy_team_muted](/Arena/set_enemy_team_muted.md)
 
 Set the enemy team to be muted. Unclear who this applies to in spectator currently.
 

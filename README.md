@@ -15,23 +15,23 @@ This repository aims to document all the functionality of this API.
 
 ## API Endpoints
 
-Due to more requests for combat data to be shared inside the API, the documentation has been split up into two parts, [Arena](/Arena) and [Combat](/Combat). Most of the data is the same between the two responses, however to make navigation easier some files will exist twice.
+Due to more requests for combat data to be shared inside the API, the documentation has been split up into two parts, [Arena](/Arena) and [Combat](/Combat). Most of the data is the same between the two modes, however to make navigation easier some files will exist twice.
 
 ### GET /session
 
-In both Combat and Arena.
+In both [Combat](/Combat/session.md) and [Arena](/Combat/session.md).
 
 This returns a detailed representation of the current state of the match. The response is a JSON string, which can be parsed with any standard JSON parser.
 
-### POST /write_camera_mode
+### POST [/write_camera_mode](/Arena/write_camera_mode.md)
 
 Only in Arena
 
-### POST /set_ui_visibility
+### POST [/set_ui_visibility](/Arena/set_ui_visibility.md)
 
 Only in Arena
 
-### POST /set_enemy_team_muted
+### POST [/set_enemy_team_muted](/Arena/set_enemy_team_muted.md)
 
 Only in Arena
 
