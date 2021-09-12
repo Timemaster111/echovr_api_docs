@@ -12,7 +12,7 @@ Allows the user to set the camera position, rotation and FOV.
 
 #### `{px, py, pz}`
 
-Position of the camera. For valid positions see the map dimensions for [Arena](/Arena#ArenaMapPositions).
+Position of the camera. For valid positions see the map dimensions for [Arena](/Arena#arena-map-positions).
 
 #### `{qx, qy, qz, qw}`
 
