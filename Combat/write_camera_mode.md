@@ -15,7 +15,6 @@ Allows setting camera variables.
 - `pov`
 - `level`
 - `follow`
-- `disc`
 - `side`
 - `free`
 - `api` (no idea what this is)

@@ -78,9 +78,9 @@ Example response (formatted for readability):
                     <a href="#teamsplayersholding_left">"holding_left"</a>: "none",
                     <a href="#teamsplayersholding_right">"holding_right"</a>: "none",
                     <a href="#teamsplayersweapon">"weapon"</a>: "Pulsar",
-                    <a href="#teamsplayersarm">"arm"</a>: "right",
-                    <a href="#teamsplayerstacmod">"tacmod"</a>: "none",
-                    <a href="#teamsplayersordnance">"ordnance"</a>: "none",
+                    <a href="#teamsplayersarm">"arm"</a>: "Right",
+                    <a href="#teamsplayerstacmod">"tacmod"</a>: "Threat Scanner",
+                    <a href="#teamsplayersordnance">"ordnance"</a>: "Detonator",
                     <a href="#teamsplayersstats">"stats"</a>: {
                     },
                     <a href="#teamsplayersvelocity">"velocity"</a>: [
@@ -436,16 +436,6 @@ The item or object the player is holding in their left hand.
 
 Possible values:
 
-- `"disc"`
-- player id (`"0"`, `"1"`)
-- `"geo"`
-
-#### `teams[].players[].holding_right`
-
-The item or object the player is holding in their right hand.
-
-Possible values:
-
 - player id (`"0"`, `"1"`)
 - `"geo"`
 
@@ -464,8 +454,10 @@ The weapon the player has selected.
 
 Possible values:
 
-- pulsar
-- idk i don't play combat i'll add the rest
+- `"Pulsar"`
+- `"Nova"`
+- `"Comet"`
+- `"Meteor"`
 
 #### `teams[].players[].arm`
 
@@ -473,9 +465,9 @@ The arm the user is currently holding their gun in.
 
 Possible values:
 
-- `Left`
-- `Right`
-- `None`
+- `"Left"`
+- `"Right"`
+- `"None"`
 
 #### `teams[].players[].tacmod`
 
@@ -483,7 +475,10 @@ The TacMod the player has selected.
 
 Possible values:
 
-- ok really I have no clue
+- `"Threat Scanner"`
+- `"Repair Matrix"`
+- `"Phase Shift"`
+- `"Energy Barrier"`
 
 #### `teams[].players[].ordnance`
 
@@ -491,7 +486,10 @@ The Ordnance the player has selected
 
 Possible values:
 
-- not an inkling
+- `"Detonator"`
+- `"Instant Repair"`
+- `"Stun Field"`
+- `"Arc Mine"`
 
 #### `teams[].players[].stats`
 
