@@ -11,8 +11,8 @@ Example response (formatted for readability):
     <a href="#client_name">"client_name"</a>: "Timemaster111",
     <a href="#sessionid">"sessionid"</a>: "1C32B3DA-F1F6-4B17-8BAE-FD1BC59C28BD",
     <a href="#sessionip">"sessionip"</a>: "184.154.39.222",
-    <a href="#match_type">"match_type"</a>: "Echo_Arena", // "Echo_Arena_Private", "Echo_Arena", "Echo_Combat", "Echo_Combat_Private", "Social_2.0", "INVALID GAMETYPE"
-    <a href="#map_name">"map_name"</a>: "mpl_arena_a", // "mpl_arena_a", "mpl_lobby_b2", mpl_combat_dyson, mpl_combat_combustion, mpl_combat_fission, mpl_combat_gauss, "INVALID LEVEL"
+    <a href="#match_type">"match_type"</a>: "Echo_Arena", // "Echo_Arena_Private", "Echo_Arena", "Social_2.0", "INVALID GAMETYPE"
+    <a href="#map_name">"map_name"</a>: "mpl_arena_a", // "mpl_arena_a", "mpl_lobby_b2", "INVALID LEVEL"
     <a href="#game_clock">"game_clock"</a>: 215.09978,
     <a href="#game_clock_display">"game_clock_display"</a>: "03:35.09",
     <a href="#private_match">"private_match"</a>: false,
@@ -182,7 +182,7 @@ Example response (formatted for readability):
                             -0.045000002,
                             -0.17400001
                         ],
-                        <a href="#teamsplayershead"></a>"up": [
+                        <a href="#teamsplayersheadup">"up"</a>: [
                             0.105,
                             0.93000007,
                             0.35200003
@@ -296,8 +296,6 @@ Possible values:
 
 - `"Echo_Arena_Private"`
 - `"Echo_Arena"`
-- `"Echo_Combat"`
-- `"Echo_Combat_Private"`
 - `"Social_2.0"`
 - `"INVALID GAMETYPE"`
 
@@ -309,10 +307,6 @@ Possible values:
 
 - `"mpl_arena_a"` - Standard Echo Arena map
 - `"mpl_lobby_b2"` - Lobby
-- `mpl_combat_dyson` - Combat maps
-- `mpl_combat_combustion`
-- `mpl_combat_fission`
-- `mpl_combat_gauss`
 - `"INVALID LEVEL"`
 
 #### `game_clock`
