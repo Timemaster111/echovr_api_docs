@@ -2,7 +2,7 @@
 
 Type: `POST`
 
-Allows setting various camera variables.
+Allows setting camera variables.
 
 ## Format
 
@@ -20,6 +20,12 @@ Allows setting various camera variables.
 - `free`
 - `api` (no idea what this is)
 
-#### `num={}`
+#### `num={0-9}`
 
-- `0-9` (assumed player data)
+- `0-9` (assumed player number)
+
+### Error cases
+
+- API not enabled
+- API user not a spectator
+- API user not in an Arena game
