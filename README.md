@@ -35,9 +35,44 @@ Only in Arena
 
 Only in Arena
 
+## Responses
+
+The API now returns responses for successes and failures.
+
+### Success
+
+#### GET
+
+The api will return a JSON with the GET output
+
+#### POST
+
+idk probably a 200 or smth
+
+### Failure
+
+Known cases where the API will error:
+
+- API output not enabled
+- API not used in a transition
+
+Each endpoint also has specific cases where it will fail that will be covered in each part.
+
+#### GET
+
+probably a JSON with a 400 and a text
+
+#### POST
+
+Same as GET
+
 ## Concepts
 
 Throughout the API there are a number of concepts that get reused in multiple places. These concepts are documented in this section.
+
+### `{}` in POST
+
+`{}` is a placeholder for a value. For example `enable={}` could be `enable=true` or `enable=false`. For smaller possible values these will be put inside the `{}`.
 
 ### Vectors
 
